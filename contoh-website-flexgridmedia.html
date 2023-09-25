@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			/* Nav menggunakan Flexbox */
+			nav {
+				display: flex;
+				justify-content: space-around;
+				background-color: #333;
+				padding: 10px;
+				color: white;
+			}
+
+			/* Section menggunakan Grid */
+			.home,
+			.home-banner,
+			.why-us,
+			.category,
+			.best-product,
+			.contact-us {
+				display: grid;
+				gap: 10px;
+				padding: 20px;
+				grid-template-columns: 1fr;
+			}
+
+			.category {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.best-product {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			/* Media Query */
+			@media (max-width: 600px) {
+				.category,
+				.best-product {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			/* Footer menggunakan Flexbox */
+			footer {
+				display: flex;
+				justify-content: center;
+				background-color: #444;
+				padding: 10px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div>Logo</div>
+			<div>Home</div>
+			<div>Contact</div>
+		</nav>
+
+		<section class="home">
+			<h2>Home Section</h2>
+			<p>Welcome to our website.</p>
+		</section>
+
+		<section class="home-banner">
+			<img src="banner.jpg" alt="Banner Image" />
+		</section>
+
+		<section class="why-us">
+			<h2>Why Us</h2>
+			<p>We provide the best services.</p>
+		</section>
+
+		<section class="category">
+			<div>Category 1</div>
+			<div>Category 2</div>
+		</section>
+
+		<section class="best-product">
+			<div>Product 1</div>
+			<div>Product 2</div>
+			<div>Product 3</div>
+		</section>
+
+		<section class="contact-us">
+			<h2>Contact Us</h2>
+			<p>Email us at contact@example.com.</p>
+		</section>
+
+		<footer>
+			<div>&copy; 2023. All Rights Reserved.</div>
+		</footer>
+	</body>
+</html>

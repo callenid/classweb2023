@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			/* Mengatur style untuk seluruh body */
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
+
+			/* Header dengan flexbox untuk menyusun item-item di dalamnya */
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				background-color: #4caf50;
+			}
+
+			/* Navigasi juga menggunakan flexbox */
+			.nav {
+				display: flex;
+				gap: 20px;
+			}
+
+			.nav a {
+				color: white;
+				text-decoration: none;
+			}
+
+			/* Bagian utama dengan flexbox untuk layout */
+			.main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px;
+			}
+
+			/* Footer dengan flexbox */
+			.footer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 20px;
+				background-color: #f1f1f1;
+			}
+		</style>
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<section id="head">
+			<div class="header">
+				<div>Logo</div>
+				<div class="nav">
+					<a href="#">Home</a>
+					<a href="#">Features</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="main">
+			<div class="main">
+				<h1>Welcome to Our Website!</h1>
+				<p>This is a simple landing page using Flexbox for the layout.</p>
+			</div>
+		</section>
+		<!-- Main Content -->
+
+		<!-- Footer -->
+		<section id="foot">
+			<div class="footer">
+				<p>&copy; 2023 My Website</p>
+			</div>
+		</section>
+	</body>
+</html>
