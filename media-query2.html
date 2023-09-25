@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS 2</title>
+		<style>
+			/* Gaya Dasar */
+			body {
+				font-family: Arial, sans-serif;
+			}
+
+			/* Smartphone portrait dan landscape */
+			@media only screen and (max-width: 480px) {
+				body {
+					background-color: lightgreen;
+					font-size: 14px;
+				}
+			}
+
+			/* Tablet portrait dan landscape */
+			@media only screen and (min-width: 481px) and (max-width: 1024px) {
+				body {
+					background-color: lightblue;
+					font-size: 18px;
+				}
+			}
+
+			/* Desktop screen */
+			@media only screen and (min-width: 1025px) {
+				body {
+					background-color: lightcoral;
+					font-size: 20px;
+				}
+			}
+
+			/* High resolution screen */
+			@media only screen and (min-resolution: 300dpi) {
+				body {
+					font-weight: bold;
+				}
+			}
+
+			/* Landscape orientation */
+			@media only screen and (orientation: landscape) {
+				body {
+					border: 2px solid black;
+				}
+			}
+
+			/* Print */
+			@media print {
+				body {
+					color: black;
+					background: white;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Resize the window or change the orientation to see the effect of the media
+			queries.
+		</p>
+	</body>
+</html>
