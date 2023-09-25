@@ -4,7 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>CSS2</title>
+		<style>
+			/* CSS untuk layar dengan lebar lebih dari 600px */
+			@media only screen and (min-width: 600px) {
+				.container {
+					padding: 20px;
+					background-color: green;
+				}
+			}
+
+			/* CSS untuk layar dengan lebar kurang dari atau sama dengan 600px */
+			@media only screen and (max-width: 600px) {
+				.container {
+					padding: 10px;
+					background-color: blue;
+				}
+			}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<div class="container"></div>
+	</body>
 </html>
