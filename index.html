@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,400;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/favicon_io/site.webmanifest" />
+		<style>
+			body {
+				font-family: "Lato", sans-serif;
+			}
+
+			.topbar {
+				display: flex;
+				background-color: white;
+				padding: 1em;
+				justify-content: space-around;
+			}
+
+			.topbar-item {
+				color: #7f7f7f;
+				padding: 10px 15px;
+				text-decoration: none;
+				font-size: 16px;
+			}
+			.navbar {
+				display: flex;
+				background-color: #c0282a;
+				padding: 0.5em;
+			}
+			.navbar a {
+				color: #e5acae;
+				padding: 0.5em;
+				text-decoration: none;
+			}
+			.navbar a:hover {
+				color: white;
+				padding: 0.5em;
+				text-decoration: none;
+			}
+
+			.active {
+				color: white !important;
+				padding: 0.5em;
+				text-decoration: none;
+			}
+
+			/* Grid untuk Content */
+			.grid-container {
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				gap: 20px;
+				padding: 20px;
+				background-color: #2a64c6;
+			}
+			.grid-item {
+				padding: 20px;
+				color: white;
+			}
+
+			.link {
+				background-color: #c0282a;
+				padding: 5px;
+				color: white;
+				margin-bottom: 20px;
+			}
+
+			.btn {
+				background-color: #c0282a;
+				padding: 10px;
+				color: white;
+			}
+			@media (max-width: 600px) {
+				.grid-container {
+					display: grid;
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+		<!--
+			blue:#2A64C6
+			red:#C0282A
+		--></head>
+	<body>
+		<div class="topbar">
+			<img
+				src="https://karyaintikarton.com/wp-content/uploads/2021/11/Logo-KIK-3@4x.png"
+				class="topbar-item"
+				style="max-height: 83px; width: 180px"
+			/>
+			<a class="topbar-item" href="#about">CONTACT</a>
+			<a class="topbar-item" href="#services">08:00 - 17:00</a>
+			<a class="topbar-item" href="#contact">Contact</a>
+		</div>
+		<!-- Navbar -->
+		<div class="navbar">
+			<a href="#home" class="active">Home</a>
+			<a href="#about">Tentang Kami</a>
+			<a href="#contact">Produk</a>
+			<a href="#contact">Info</a>
+			<a href="#contact">Hubungi Kami</a>
+		</div>
+
+		<!-- Content -->
+		<div class="grid-container">
+			<div class="grid-item">
+				<img
+					src="https://karyaintikarton.com/wp-content/uploads/2021/12/Tentang-Kami-1067x800.jpg"
+					width="100%"
+				/>
+			</div>
+			<div class="grid-item">
+				<h2>Tentang Kami</h2>
+				<p>
+					PT KARYA INTI KARTON merupakan perusahaan manufaktur terpercaya yang
+					bergerak di bidang pembuatan karton box (kardus) dan paper core.
+					Didukung dengan penggunaan bahan berkualitas serta sistem pengerjaan
+					yang dilakukan oleh para tenaga kerja yang handal dan terampil, kami
+					berupaya untuk selalu menghasilkan produk yang unggul dan berkualitas.
+				</p>
+				<br />
+				<a
+					target="_blank"
+					href="https://karyaintikarton.com/wp-content/uploads/2022/09/Company-Profile-KIK_New.pdf"
+					class="link"
+					>Download E-company profile</a
+				><br /><br />
+
+				<a class="btn">Selengkapnya</a>
+			</div>
+		</div>
+	</body>
+</html>
